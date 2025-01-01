@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
 
   List<Team> teams = [];
 //get teams
+//replace 'BALLDONTLIEAPIKEY' with your own api key from balldontlie.io website
   Future getTeams() async {
     var response = await http.get(
       Uri.https('api.balldontlie.io', '/v1/teams'),
